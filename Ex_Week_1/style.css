@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: Open Sans;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(192, 33, 53);
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.logo-login {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-left: 150px;
+    /* flex-direction: row; */
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.menu {
+    color: rgb(236, 236, 236);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: 380px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    margin-right: 600px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+}
+
+.thongtin {
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    margin: 20px 0 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    /* overflow: hidden; */
+}
+
+.column2 {
+    margin-left: 20px;
+    padding: 20px 150px 40px 20px;
+}
+
+.avt {
+    overflow: hidden;
+    position: relative;
+}
+
+.avt_header {
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avt_circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    border: 5px white solid;
+    position: absolute;
+    left: 20px;
+    top: 110px;
+}
+
+.avt_info {
+    margin-top: 70px;
+    line-height: 2;
+    padding: 20px;
+}
+
+.gpa {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.avt,
+.gpa,
+.column2 {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px gray;
+    /* border: 2px; */
+    background-color: white;
+}
+
+.thongtingiadinh {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    border-bottom: 2px solid #ddd;
+    width: 160px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+footer {
+    background-image: url(https://ctsv.hust.edu.vn/static/img/footer.1e5dd709.jpeg);
+    background-size: 100%;
+    background-position: bottom;
+    height: 35vh;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.footer-new {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact {
+    color: #888;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+.introduce {
+    line-height: 2em;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.user-app {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.logo-app {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.title {
+    color: hsla(0, 0%, 83%, 0.8);
+    font-weight: 500;
+    margin: 0 0 0 8px;
+}
