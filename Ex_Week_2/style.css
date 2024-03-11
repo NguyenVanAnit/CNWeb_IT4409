@@ -1,12 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(212, 214, 214);
+    font-family: Open Sans;
 }
 
 .container {
     background-color: white;
     width: 30%;
+    border: 1px solid #8d949e;
     /* height: 50%; */
+    border-radius: 5px;
+    margin-top: 5%;
+    padding: 10px;
 }
+
+h1, #easy {
+    margin-left: 20px;
+}
+
+.name-box, .email-box, .pass-box {
+    padding: 1px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#firstname, #surname {
+    width: 45%;
+    padding: 10px 20px;
+    margin: 1px 10px;
+    border-radius: 5px;
+    border: 1px solid #8d949e;
+    background-color: #f5f6f7;
+}
+
+#password, #email {
+    padding: 10px 20px;
+    margin: 1px 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #8d949e;
+    background-color: #f5f6f7;
+}
+

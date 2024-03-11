@@ -9,18 +9,42 @@
 </head>
 
 <body>
-    <div class="container">
+    <form class="container">
         <h1>Sign Up</h1>
-        <p>It's quick and easy.</p>
-        <input type="text" name="firstname" placeholder="First name">
-        <input type="text" name="surname" placeholder="Surname">
+        <p id="easy">It's quick and easy.</p>
+        <div class="name-box">
+            <input type="text" name="firstname" placeholder="First name" id="firstname">
+            
+            <input type="text" name="surname" placeholder="Surname" id="surname">
+        </div>
         <br>
-        <input type="email" name="email" placeholder="Mobile number and email address">
+        <div class="email-box">
+            <input type="number" name="email" placeholder="Mobile number and email address" id="email">
+            <br>
+            <div class="email-error"></div>
+        </div>
         <br>
-        <input type="password" name="password" placeholder="New Password">
+        <div class="pass-box">
+            <input type="password" name="password" placeholder="New Password" id="password">
+        </div>
         <br>
-        <label for="date">Date of birth</label>
-        <input type="date" name="date" placeholder="Date">
+        <div class="dateofbirth">
+            <label for="date">Date of birth</label>
+            <br>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <select id="day" title="day">
+                        <option value="">Day</option>
+                    </select>
+                    <select id="month" title="month">
+                        <option value="">Month</option>
+                    </select>
+                    <select id="year" title="year">
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
         <br>
         <br>
         <div class="gender">
@@ -40,11 +64,15 @@
             </span>
         </div>
 
-        <p>Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook.<a href="https://www.facebook.com/help/637205020878504">Tìm hiểu thêm</a></p>
-        <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</p>
+        <p>Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook.<a
+                href="https://www.facebook.com/help/637205020878504">Tìm hiểu thêm</a></p>
+        <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của
+            chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</p>
 
         <input type="submit" name="submit" value="Submit">
-    </div>
+    </form>
+
+    <script src="style.js"></script>
 </body>
 
 </html>
