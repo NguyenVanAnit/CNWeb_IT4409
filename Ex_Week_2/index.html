@@ -12,24 +12,28 @@
     <form class="container">
         <h1>Sign Up</h1>
         <p id="easy">It's quick and easy.</p>
+
         <div class="name-box">
             <input type="text" name="firstname" placeholder="First name" id="firstname">
-            
             <input type="text" name="surname" placeholder="Surname" id="surname">
         </div>
-        <br>
+        <div class="firstname-error"></div>
+        <div class="surname-error"></div>
+
+
         <div class="email-box">
-            <input type="number" name="email" placeholder="Mobile number and email address" id="email">
-            <br>
-            <div class="email-error"></div>
+            <input type="text" name="email" placeholder="Mobile number and email address" id="email">
         </div>
-        <br>
+        <div class="email-error"></div>
+
+
         <div class="pass-box">
             <input type="password" name="password" placeholder="New Password" id="password">
         </div>
-        <br>
+        <div class="password-error"></div>
+
         <div class="dateofbirth">
-            <label for="date">Date of birth</label>
+            <label for="date" class="date">Date of birth</label>
             <br>
             <div class="dropdown">
                 <div class="dropdown-content">
@@ -44,32 +48,38 @@
                     </select>
                 </div>
             </div>
+            <div class="date-error"></div>
         </div>
-        <br>
-        <br>
+
         <div class="gender">
-            <label for="gender">Gender</label>
+            <label for="gender" class="gender">Gender</label>
             <br>
-            <span class="male">
-                <span>Male</span>
-                <input type="radio" name="gender" placeholder="Male">
-            </span>
-            <span class="female">
-                <span>Female</span>
-                <input type="radio" name="gender" placeholder="Female">
-            </span>
-            <span class="custom">
-                <span>Custom</span>
-                <input type="radio" name="gender" placeholder="Custom">
-            </span>
+            <div class="gender-sele">
+                <span id="male">
+                    <span>Male</span>
+                    <input type="radio" name="gender" placeholder="Male">
+                </span>
+                <span id="female">
+                    <span>Female</span>
+                    <input type="radio" name="gender" placeholder="Female">
+                </span>
+                <span id="custom">
+                    <span>Custom</span>
+                    <input type="radio" name="gender" placeholder="Custom">
+                </span>
+            </div>
         </div>
 
-        <p>Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của bạn lên Facebook.<a
-                href="https://www.facebook.com/help/637205020878504">Tìm hiểu thêm</a></p>
-        <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách quyền riêng tư và Chính sách cookie của
-            chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.</p>
+        <div class="point">
+            <p>People who use our service may have uploaded your contact information to Facebook. <a
+                    href="https://www.facebook.com/help/637205020878504">Learn more.</a></p>
+            <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS
+                notifications from us and can opt out at any time.</p>
+        </div>
 
-        <input type="submit" name="submit" value="Submit">
+        <div class="submit-btn">
+            <input type="submit" name="submit" value="Sign Up" id="submit">
+        </div>
     </form>
 
     <script src="style.js"></script>

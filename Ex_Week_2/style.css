@@ -14,35 +14,105 @@ body {
     border: 1px solid #8d949e;
     /* height: 50%; */
     border-radius: 5px;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 10px;
 }
 
-h1, #easy {
+h1,
+#easy {
     margin-left: 20px;
 }
 
-.name-box, .email-box, .pass-box {
+.name-box,
+.email-box,
+.pass-box {
     padding: 1px 0;
     display: flex;
     justify-content: center;
 }
 
-#firstname, #surname {
+.firstname-error,
+.surname-error,
+.email-error,
+.password-error,
+.date-error {
+    display: flex;
+    justify-content: center;
+}
+
+#firstname,
+#surname {
     width: 45%;
     padding: 10px 20px;
-    margin: 1px 10px;
+    margin: 5px 10px;
     border-radius: 5px;
     border: 1px solid #8d949e;
     background-color: #f5f6f7;
 }
 
-#password, #email {
+#password,
+#email {
     padding: 10px 20px;
-    margin: 1px 10px;
+    margin: 5px 10px;
     width: 90%;
     border-radius: 5px;
     border: 1px solid #8d949e;
     background-color: #f5f6f7;
 }
 
+label.date,
+label.gender {
+    margin-left: 15px;
+}
+
+.dateofbirth,
+.gender {
+    margin-top: 10px;
+}
+
+.dropdown-content,
+.gender-sele {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px;
+}
+
+#day,
+#month,
+#year {
+    padding: 5px 10%;
+    border-radius: 5px;
+    border: 1px solid #8d949e;
+    background-color: #f5f6f7;
+    font-size: 18px;
+}
+
+#male,
+#female,
+#custom {
+    padding: 5px 9%;
+    border-radius: 5px;
+    border: 1px solid #8d949e;
+    background-color: #f5f6f7;
+}
+
+.point {
+    margin: 15px 10px 15px 18px;
+    font-size: 13px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+#submit {
+    padding: 7px 100px;
+    font-size: 20px;
+    background-color: #00a400;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
