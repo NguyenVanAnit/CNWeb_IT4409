@@ -36,6 +36,22 @@ function checkDate() {
     return true
 }
 
+let [male, female, custom] = ['male', 'female', 'custom'].map(e => document.getElementById(e))
+function checkGender() {
+    let genders = document.getElementsByName('gender')
+
+    genders.forEach(radio => {
+        if(radio.checked) return true
+    });
+    return false
+}
+
+function activeRadio() {
+    let divElement = event.currentTarget
+    let radioInput = divElement.querySelector('input[type="radio"]')
+    radioInput.checked = true
+}
+
 let form = document.querySelector('.container')
 let [firstname, surname, emailphone, password] = ['firstname', 'surname', 'email', 'password'].map(e => document.getElementById(e))
 
@@ -61,6 +77,9 @@ form.addEventListener('submit', (e) => {
 
     if(checkDate()) document.querySelector('.date-error').innerHTML = ''
     else document.querySelector('.date-error').innerHTML = '<p style="color: red">Error date</p>'
+
+    if(checkGender()) document.querySelector('.gender-error').innerHTML = ''
+    // else document.querySelector('.gender-error').innerHTML = '<p style="color: red">Error gender</p>'
 })
 
 
